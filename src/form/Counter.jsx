@@ -6,8 +6,10 @@ export default function Counter(){
     console.info(`Render Counter ${counter}`);
 
     function handleClick(){
-        setCounter(counter + 3);
-        // masih 0
+        setCounter((c) => c + 1);
+        setCounter((c) => c + 1);
+        setCounter((c) => c + 1);
+        // counter masih 0
         console.log(counter);
     }
 
