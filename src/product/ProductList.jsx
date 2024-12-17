@@ -5,7 +5,7 @@ export default function ProductList() {
     const [products, setProducts] = useState([]);
     const [load, setLoad] = useState(false);
 
-    function handleClick(){
+    function handleClick() {
         console.info(`Handle Click`);
         setLoad(true);
     }
@@ -16,10 +16,15 @@ export default function ProductList() {
 
     useEffect(() => {
         console.info('Call Use Effect');
-        if(load){
-            fetch("/products.json")
-                .then((response) => response.json())
-                .then((data) => setProducts(data));
+
+        async function fetchProducts() {
+            const response = await fetch("/products.json");
+            const data = await response.json();
+            setProducts(data);
+        }
+
+        if (load) {
+            fetchProducts();
         }
 
         return () => {
