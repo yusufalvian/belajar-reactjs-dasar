@@ -1,10 +1,11 @@
-import {createRoot} from "react-dom/client";
-import {StrictMode} from "react";
+import { createRoot } from "react-dom/client";
+import { StrictMode } from "react";
 import CounterApp from "./CounterApp.jsx";
+import CounterApp2 from "./CounterApp2.jsx";
 
 createRoot(document.getElementById("root"))
     .render(
         <StrictMode>
-            <CounterApp/>
+            <CounterApp2 />
         </StrictMode>
     )
