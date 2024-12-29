@@ -5,7 +5,8 @@ export default function TodoList() {
         {
             id: 0,
             text: "Learn HTML",
-            isCompleted: true
+            isCompleted: true, 
+            isDeleted: true
         },
         {
             id: 1,
