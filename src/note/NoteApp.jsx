@@ -12,6 +12,7 @@ const initialNotes = [
     {id: id++, text: "Learn ReactJS", done: false}
 ]
 
+// reducer pakai immer, lebih mudah dan intuitive dibanding pakai useState 
 function notesReducer(notes, action) {
     if (action.type === "ADD_NOTE") {
         notes.push({
