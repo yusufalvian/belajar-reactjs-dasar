@@ -20,12 +20,14 @@ export default function Timer() {
         }, 10);
     }
 
+    // will stop the interval based on the intervalId that is saved in timer.current
     function handleStop() {
-        // will stop the interval based on the intervalId that is saved in timer.current
         console.log('Clearing interval with ID:', timer.current);
         clearInterval(timer.current);
     }
 
+    // set start and now to Date.now()
+    // this will reset the timer
     function handleReset() {
         setStart(Date.now());
         setNow(Date.now());

@@ -7,6 +7,6 @@ import ContactForm3 from "./ContactForm3.jsx";
 createRoot(document.getElementById("root"))
     .render(
         <StrictMode>
-            <ContactForm3/>
+            <ContactForm/>
         </StrictMode>
     )
