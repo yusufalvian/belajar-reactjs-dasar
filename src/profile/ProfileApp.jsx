@@ -4,6 +4,9 @@ import ProfileAddress from "./ProfileAddress.jsx";
 import {useState} from "react";
 import ProfileForm from "./ProfileForm.jsx";
 
+// we can think of context like "global value"
+// "name" is changed in ProfileForm component
+// Profile component can access the "name" value using useContext
 export default function ProfileApp() {
     const [name, setName] = useState("Eko");
 

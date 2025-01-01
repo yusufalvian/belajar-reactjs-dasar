@@ -1,6 +1,9 @@
 import {useEffect, useState} from "react";
 import Product from "./Product.jsx";
 
+// component "Product List"
+// state -> products and load 
+// button. there is onClick -> handleClick -> 
 export default function ProductList() {
     const [products, setProducts] = useState([]);
     const [load, setLoad] = useState(false);
